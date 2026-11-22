@@ -681,3 +681,490 @@ footer .brand-mark {
     transition: none!important;
   }
 }
+
+/* CINORA — Phase Two */
+
+.discover {
+  padding: 115px 10%;
+  border-bottom: 1px solid var(--line);
+}
+
+.discover-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 42px;
+}
+
+.discover-heading h2,
+.preview-copy h2 {
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.discover-heading h2 span,
+.preview-copy h2 span {
+  color: var(--red);
+}
+
+.discover-heading > p,
+.preview-copy > p {
+  max-width: 420px;
+  color: #9e999e;
+  font-size: 13px;
+  line-height: 2.3;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.showcase-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #171518, #09090b);
+  transition: .3s;
+}
+
+.showcase-card:hover {
+  transform: translateY(-7px);
+  border-color: #ef233c88;
+  box-shadow: 0 22px 55px #0009;
+}
+
+.showcase-art {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-art:before,
+.showcase-art:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.showcase-art:before {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, #f05a6b55, transparent 68%);
+}
+
+.showcase-art:after {
+  width: 150px;
+  height: 210px;
+  border: 1px solid #ffffff30;
+  transform: rotate(32deg);
+  box-shadow: 0 0 65px #ef233c22;
+}
+
+.showcase-art span {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: #ffffff88;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.showcase-art i {
+  position: relative;
+  z-index: 1;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #ffffffc9;
+  text-shadow: 0 8px 30px #000;
+}
+
+.showcase-movie .showcase-art {
+  background: radial-gradient(ellipse at 50% 35%, #71303b, #211116 48%, #09090b 80%);
+}
+
+.showcase-series .showcase-art {
+  background: radial-gradient(ellipse at 70% 30%, #51404b, #1c151e 48%, #09090b 82%);
+}
+
+.showcase-live .showcase-art {
+  background: radial-gradient(ellipse at 35% 35%, #56302c, #1b1113 50%, #09090b 82%);
+}
+
+.showcase-info {
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase-info h3 {
+  margin: 0 0 5px;
+  font-size: 17px;
+}
+
+.showcase-info small {
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.showcase-arrow {
+  color: var(--red);
+  font-size: 21px;
+}
+
+.app-preview {
+  padding: 110px 12%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(110deg, #0b0b0e, #111014 55%, #080809);
+}
+
+.preview-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.preview-copy h2 {
+  margin: 22px 0;
+}
+
+.text-link {
+  display: inline-flex;
+  gap: 18px;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-bottom: 1px solid #ef233c88;
+  padding-bottom: 10px;
+}
+
+.text-link span {
+  color: var(--red);
+  font-size: 18px;
+}
+
+.device-stage {
+  min-height: 490px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.device-glow {
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ef233c30, transparent 68%);
+  filter: blur(10px);
+}
+
+.preview-orbit {
+  position: absolute;
+  width: 390px;
+  height: 300px;
+  border: 1px solid #ef233c30;
+  border-radius: 50%;
+  transform: rotate(-24deg);
+}
+
+.device {
+  width: 245px;
+  height: 460px;
+  border: 5px solid #343036;
+  border-radius: 35px;
+  background: #09090b;
+  padding: 22px 15px 15px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 35px 85px #000b, 0 0 0 1px #ffffff25;
+  transform: rotate(-5deg);
+  overflow: hidden;
+}
+
+.device:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 29px;
+  background: linear-gradient(115deg, #ffffff12, transparent 28%, transparent 75%, #ffffff08);
+  pointer-events: none;
+}
+
+.device-camera {
+  position: absolute;
+  width: 65px;
+  height: 14px;
+  border-radius: 20px;
+  background: #020203;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.device-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 18px;
+  direction: ltr;
+}
+
+.device-top b {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.device-top i {
+  color: var(--red);
+  font-style: normal;
+}
+
+.device-top span {
+  direction: rtl;
+  color: #777;
+  font-size: 8px;
+}
+
+.device-hero {
+  height: 195px;
+  border-radius: 12px;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  background: radial-gradient(circle at 70% 25%, #a53a4a, #401923 43%, #111014 80%);
+  border: 1px solid #ffffff18;
+}
+
+.device-hero small {
+  color: #ffffffa8;
+  font-size: 8px;
+}
+
+.device-hero strong {
+  font-size: 27px;
+  line-height: 1.3;
+}
+
+.device-hero > span {
+  color: #ff9aa6;
+  font-size: 8px;
+}
+
+.device-section-title {
+  font-size: 10px;
+  margin: 18px 0 10px;
+}
+
+.device-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.device-tiles span {
+  background: linear-gradient(145deg, #292329, #141216);
+  border: 1px solid #ffffff15;
+  border-radius: 7px;
+  padding: 17px 2px;
+  text-align: center;
+  font-size: 8px;
+}
+
+.device-bottom {
+  position: absolute;
+  bottom: 13px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.device-bottom i {
+  width: 17px;
+  height: 3px;
+  border-radius: 5px;
+  background: #6b252f;
+}
+
+.floating-download {
+  position: fixed;
+  z-index: 30;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  border-radius: 50px;
+  background: linear-gradient(120deg, #ff344d, #bd0c29);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 10px 35px #ef233c55;
+  border: 1px solid #ff8b98aa;
+}
+
+.floating-download:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px #ef233c77;
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+/* About page */
+
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  padding: 130px 12% 100px;
+  background: radial-gradient(ellipse at 75% 20%, #79142755, transparent 45%), #070708;
+}
+
+.about-hero h1 {
+  margin: 24px 0;
+  font-size: clamp(48px, 7vw, 86px);
+  line-height: 1.35;
+}
+
+.about-hero h1 span {
+  color: var(--red);
+}
+
+.about-hero p {
+  max-width: 650px;
+  color: #aaa;
+  line-height: 2.4;
+  font-size: 14px;
+}
+
+.about-content {
+  padding: 75px 12%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.about-panel {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: linear-gradient(145deg, #171518, #0a0a0c);
+}
+
+.about-panel h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.about-panel p {
+  color: #999;
+  line-height: 2.2;
+  font-size: 13px;
+}
+
+.about-actions {
+  padding: 20px 12% 100px;
+}
+
+@media(max-width: 900px) {
+  .showcase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .showcase-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .app-preview {
+    grid-template-columns: 1fr;
+    padding: 90px 8%;
+    gap: 20px;
+  }
+
+  .device-stage {
+    min-height: 500px;
+  }
+}
+
+@media(max-width: 560px) {
+  .discover {
+    padding: 80px 7%;
+  }
+
+  .discover-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card:last-child {
+    grid-column: auto;
+  }
+
+  .showcase-art {
+    height: 220px;
+  }
+
+  .app-preview {
+    padding: 80px 7%;
+  }
+
+  .device-stage {
+    transform: scale(.88);
+    margin: -20px 0;
+  }
+
+  .floating-download {
+    left: 14px;
+    bottom: 14px;
+    padding: 12px 15px;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .about-hero {
+    padding: 90px 7% 70px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    padding: 50px 7%;
+  }
+
+  .about-actions {
+    padding: 10px 7% 80px;
+  }
+}
